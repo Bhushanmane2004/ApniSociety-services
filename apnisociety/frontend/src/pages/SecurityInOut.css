@@ -1,0 +1,128 @@
+/* SecurityInOut.css */
+
+/* Basic reset and styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container */
+  .security-in-out {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form container */
+  .guest-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .guest-form input[type="text"],
+  .guest-form input[type="file"] {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .guest-form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* File input */
+  .guest-form input[type="file"] {
+    border: none;
+    padding: 0;
+  }
+  
+  /* Submit button */
+  .guest-form button {
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .guest-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Success message */
+  .success-message {
+    color: #28a745;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Guest entry list */
+  .guest-requests-list {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1.5rem;
+  }
+  
+  .guest-requests-list h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .guest-request-item {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .guest-request-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guest-request-item p {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .guest-request-item strong {
+    color: #333;
+  }
+  
+  /* Headers */
+  h2 {
+    font-size: 1.75rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    .security-in-out {
+      padding: 1.5rem;
+    }
+  
+    .guest-form input[type="text"],
+    .guest-form button {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for routin
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Services from "./Services";
 import Maintainess from "./maintainess";
+import UserProfile from "./UserProfile";
+import GuestInOut from "./GuestInOut";
 import {
   faSignInAlt,
   faConciergeBell,
@@ -67,13 +69,13 @@ const Dashboard = () => {
       case "NoticeBoard":
         return <NoticeBoard username={username} userId={userId} />;
       case "GuestInOut":
-        return <div>Guest In/Out Component</div>;
+        return <GuestInOut />;
       case "Maintainess":
         return <Maintainess />;
       case "Services":
         return   <Services />;
       case "UserProfile":
-        return <div>User Profile Component</div>;
+        return<UserProfile />;
       default:
         return <div>Select a feature</div>;
     }
@@ -110,11 +112,11 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* Future SubMenu feature (e.g., Account Settings) */}
+          
           {showSubMenu && (
             <div className="submenu">
               <p>Account Settings</p>
-              {/* Additional submenu items */}
+             
             </div>
           )}
         </div>

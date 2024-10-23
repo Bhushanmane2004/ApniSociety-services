@@ -3,9 +3,10 @@
   padding: 40px 30px; /* Increased padding for a more spacious feel */
   background-color: #ffffff; /* White background for cleanliness */
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
   max-width: 600px; /* Limit the width for better readability */
   margin: 20px auto; /* Center the component on the page */
+  font-family: 'Arial', sans-serif; /* Modern font */
 }
 
 .maintainess h1 {
@@ -13,25 +14,27 @@
   margin-bottom: 20px;
   color: #333; /* Dark color for the title */
   text-align: center; /* Centered title */
+  letter-spacing: 1px; /* Slight letter spacing for a modern touch */
 }
 
 .select-payment {
   width: 100%; /* Full width for the dropdown */
-  padding: 10px; /* Padding for comfort */
+  padding: 12px; /* Increased padding for comfort */
   border: 1px solid #ccc; /* Light border for the dropdown */
   border-radius: 8px;
   font-size: 16px; /* Larger font size for better readability */
   margin-bottom: 20px; /* Space between dropdown and button */
-  transition: border-color 0.3s; /* Smooth transition for focus */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
 }
 
 .select-payment:focus {
   border-color: #3399cc; /* Highlight border on focus */
   outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(51, 153, 204, 0.5); /* Subtle glow effect */
 }
 
 .button {
-  padding: 12px 20px; /* Increased padding for a button */
+  padding: 14px 24px; /* Increased padding for a button */
   background-color: #3399cc; /* Primary color for the button */
   color: #fff; /* White text color */
   border: none;
@@ -47,6 +50,7 @@
 .button:hover {
   background-color: #2979b8; /* Darker shade on hover */
   transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
 .button:active {
@@ -58,6 +62,7 @@
   color: #d9534f; /* Color for payment status messages */
   text-align: center; /* Centered text */
   font-size: 18px; /* Larger font size for messages */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for status messages */
 }
 
 .dummy-payments {
@@ -67,6 +72,8 @@
 .dummy-payments h3 {
   font-size: 20px; /* Font size for the section title */
   color: #333; /* Dark color for the title */
+  margin-bottom: 10px; /* Space below title */
+  text-align: left; /* Align title to the left */
 }
 
 .dummy-payments ul {
@@ -80,10 +87,40 @@
   border: 1px solid #e0e0e0; /* Light border for each item */
   border-radius: 6px;
   margin-bottom: 10px; /* Space between list items */
-  transition: box-shadow 0.2s; /* Smooth transition for hover */
+  transition: box-shadow 0.2s, transform 0.2s; /* Smooth transition for hover */
 }
 
 .dummy-payments li:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+  transform: translateY(-1px); /* Slight lift effect */
+}
+
+.payment-history {
+  margin-top: 30px; /* Space above payment history section */
+}
+
+.payment-history h3 {
+  font-size: 20px; /* Font size for the section title */
+  color: #333; /* Dark color for the title */
+  margin-bottom: 10px; /* Space below title */
+  text-align: left; /* Align title to the left */
+}
+
+.payment-history ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.payment-history li {
+  padding: 12px; /* Padding for each list item */
+  background-color: #f1f1f1; /* Slightly darker background for contrast */
+  border: 1px solid #e0e0e0; /* Light border for each item */
+  border-radius: 6px;
+  margin-bottom: 10px; /* Space between list items */
+  transition: box-shadow 0.2s, transform 0.2s; /* Smooth transition for hover */
+}
+
+.payment-history li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
   transform: translateY(-1px); /* Slight lift effect */
 }
